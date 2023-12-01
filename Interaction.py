@@ -1,4 +1,4 @@
-from . import Calculator
+from calculator import Calculator
 class Interaction:
     def __init__(self,username,database):
         self.calculator = Calculator()
@@ -40,7 +40,7 @@ class Interaction:
         history = self.database.get_user_history(self.username)
         print("历史记录：")
         for record in history:
-            print(f"{record[0]} = {record[1]}")
+            print(f"{record[0]} -> {record[1]}")
     def main(self):
         while True:
             input_string = input("请输入您要计算的表达式：")

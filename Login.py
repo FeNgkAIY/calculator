@@ -1,7 +1,7 @@
-from . import Interaction
-from . import MyDatabase
+from Interaction import Interaction
+from MyDatabase import MyDatabase
 class Login:
-    def __init__(self, database):
+    def __init__(self):
         self.db = MyDatabase()
         self.interaction=None
 
