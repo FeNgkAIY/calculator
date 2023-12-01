@@ -1,6 +1,6 @@
-from Login import Login
 # # numeralCalculations
-# sqrt(2)
+# math.sqrt(2)
+# 1+2+math.sqrt(3)
 
 # # calculate_statistics
 # 1 2 3 4 5 mean
@@ -20,14 +20,4 @@ from Login import Login
 # [[1, 2], [3, 4]]*[[2, 3], [4, 5]]
 # [[1, 2], [3, 4]] conj
 # [[1, 2], [3, 4]] det
-
-login = Login()
-
-# 添加用户和密码
-login.add_user('user1', 'password1')
-
-# 验证用户
-username_input = 'user1'
-password_input = 'password1'
-login.log_in(username_input, password_input)
 
