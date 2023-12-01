@@ -5,7 +5,7 @@ import sqlite3
 class Calculator:
     def numeralCalculations(self, expression):
         try:
-            result = eval(f"math.{expression}")
+            result = eval(f"{expression}")
             return result
         except Exception as e:
             return f"Error: {e}"
