@@ -1,7 +1,8 @@
 from . import Interaction
+from . import MyDatabase
 class Login:
     def __init__(self, database):
-        self.db = database
+        self.db = MyDatabase()
         self.interaction=None
 
     def add_user(self, username, password):
